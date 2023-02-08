@@ -10,7 +10,7 @@ public class RegularExpression {
         public static void main(String[] args)
         {
             Scanner s = new Scanner(System.in);
-            System.out.println("Enter first name: ");
+            System.out.println("Enter Last name: ");
             String name = s.next();
             Matcher matcher = pattern.matcher(name);
             if(matcher.matches())
