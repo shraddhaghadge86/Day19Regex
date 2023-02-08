@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class RegularExpression {
 
-    static Pattern pattern = Pattern.compile("[A-z]{1,}[A-Za-z]{7,}");
+    static Pattern pattern = Pattern.compile("[A-z]{1,}[A-Za-z0-9([@#$%^&*+=]{1,})]{6,}");
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
