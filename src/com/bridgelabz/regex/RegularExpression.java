@@ -6,13 +6,13 @@ import java.util.regex.Pattern;
 
 public class RegularExpression {
 
-        static Pattern pattern = Pattern.compile("^([A-Z]{1}[a-z]{2,})$");
+        static Pattern pattern = Pattern.compile("^([a-zA-Z0-9.]+)@([a-zA-Z0-9.]+).([a-zA-Z]{2,5})$");
         public static void main(String[] args)
         {
             Scanner s = new Scanner(System.in);
-            System.out.println("Enter Last name: ");
-            String name = s.next();
-            Matcher matcher = pattern.matcher(name);
+            System.out.println("Enter Email ID: ");
+            String emailId = s.next();
+            Matcher matcher = pattern.matcher(emailId);
             if(matcher.matches())
                 System.out.println(true);
             else
